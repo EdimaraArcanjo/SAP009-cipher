@@ -1,29 +1,67 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Uma página que ensina sobre criptografia de César">
     <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
+
   <body>
-    <header>
-      <h1>Quer enviar mensagens secretas?</h1>
+
+    <header class="cabecalho">
+      <img class= "imagem-icone" src="img/icone2.png" alt="icone" width="150">
+      <h1>Quer escrever mensagens secretas?</h1>
       <hr>
     </header>
-    <main>
-       <div>
-      <h2>Digite aqui a mensagem que você quer criptografar</h2>
-      <input type="text"></input>
-      <button type="submit"></button>
-    </div>
-      <div>
-      <h2>Digite aqui a mensagem que você quer descriptografar</h2>
-      <input type="text"></input>
-      <button type="submit"></button>
-    </div>
-  </main>
-  <footer>
 
+   <main class="conteudo">
+
+     <section class="conteudo-explicacao">
+      <div>
+       <h2>Para isso, entenda um pouco como o mecanismo de criptografia desta página funciona:</h2>
+       <p> A <strong>Cifra de César</strong> é um dos primeiros tipos de criptografias conhecidas na história!<br>
+        O imperador romano Júlio César utilizava essa cifra 
+        para enviar ordens secretas aos seus generais no campo de batalha. <br> É um tipo de cifra por substituição, 
+        em que cada letra do texto original é substituida por outra que se encontra há um número <br> fixo de posições mais a frente no alfabeto.
+        <a href="https://pt.wikipedia.org/wiki/Cifra_de_César">Clique aqui</a> para ver uma explicação mais detalhada sobre a <strong>Cifra de César</strong></p> 
+      </div>
+      <img src="img/gato-detetive.png" alt="gato-detetive" width="350">
+    </section>
+
+    <section class="conteudo-interativo1">
+     <div>
+        <h2>Agora vamos lá!</h2>
+        <form action=""> 
+         <label> escolha o número de deslocamentos</label>
+         <input type="number" max="25" min="1" required placeholder="0" > 
+         <button class="botao" type="submit">ok</button>
+         <label for="cript"> Digite a mensagem que você quer criptografar</label>
+         <input id= "cripto" name= "cript-example" type="text" required placeholder="digite sua mensagem aqui">
+         <button class="botao" type="submit">enviar</button>
+        </form>
+      </div>
+   </section>
+      
+    <section class="conteudo-interativo2">
+      <div>
+        <form action="">
+         <label> escolha o número de deslocamentos</label>
+         <input type="number" max="25" min="1" required placeholder="0">
+         <button class="botao" type="submit">ok</button>
+         <label for="descript"> Digite a mensagem que você quer descriptografar</label>
+         <input id="descripto" name= "descript-example" type="text" required placeholder="digite sua mensagem aqui">
+         <button class= "botao" type="submit">enviar</button>
+        </form>
+      </div>
+    </section>  
+
+   </main>
+
+  <footer class="rodape">
+    <h4> Desenvolvido por Edimara Arcanjo</h4>
   </footer>
    
     <script src="index.js" type="module"></script>
