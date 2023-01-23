@@ -15,16 +15,10 @@ body {
 }
 
 .cabecalho {
-    display: flex;
     padding: 24px;
-    align-items: center;
+    text-align: center;
     justify-content: space-around;
     padding: 24px;
-
-}
-
-.imagem-icone {
-    height: 72px;
 
 }
 
@@ -47,22 +41,21 @@ h1 {
 
 h2 {
     font-family: 'Raleway', sans-serif;
-    color: #FFF2E7;r
+    color: #FFF2E7;
+    padding: 10px;
+    margin: 24px;
+    
 }
 
 .conteudo-interativo1 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
+    margin: 24px;
+    padding: 10px;
 
 }
 
 .conteudo-interativo2 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
+    margin: 24px;
+    padding: 10px;
     
 }
 
@@ -90,5 +83,56 @@ h4 {
     font-size: 15px;
     color: #2F2325;
 
+}
+
+p {
+    color: #FFF2E7;
+    font-family: 'Raleway', sans-serif;
+    margin: 10px ;
+    padding: 24px ;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.instrucao {
+    color: #FFF2E7;
+    font-family: 'Raleway', sans-serif;
 
 }
+
+.numero {
+    background-color: #ECD6C4;
+    width: 80px;
+    height: 30px;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(0,0,0,0.25);
+    border-radius: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #2F2325;
+
+}
+
+.mensagem {
+    background-color: #ECD6C4;
+    width: 200px;
+    height: 30px;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(0,0,0,0.25);
+    border-radius: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #2F2325;
+
+}
+
+a {
+    color: #A68064;
+}
+
+a:hover {
+    color: wheat;
+}
+
