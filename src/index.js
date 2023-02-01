@@ -1,6 +1,6 @@
 import cipher from './cipher.js';
 
-console.log(cipher);
+
 
 let deslocamentoC = document.getElementById('textoDeslocC')
 let mensagemC = document.getElementById('msgC')
