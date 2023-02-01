@@ -2,15 +2,15 @@ import cipher from './cipher.js';
 
 
 
-let deslocamentoC = document.getElementById('textoDeslocC')
-let mensagemC = document.getElementById('msgC')
-let botaoC = document.getElementById('botaoC')
-let cifrado = document.getElementById('cifrado')
+const txtDeslocaC = document.getElementById('textoDeslocC')
+const mensagemC = document.getElementById('msgC')
+const botaoC = document.getElementById('botaoC')
+const cifrado = document.getElementById('cifrado')
 
-let txtDeslocD = document.getElementById('textoDeslocD')
-let mensagemD = document.getElementById('msgD')
-let botaoD = document.getElementById('botaoD')
-let decifrado = document.getElementById('decifrado')
+const txtDeslocD = document.getElementById('textoDeslocD')
+const mensagemD = document.getElementById('msgD')
+const botaoD = document.getElementById('botaoD')
+const decifrado = document.getElementById('decifrado')
 
 function encode(e) {
   e.preventDefault()
