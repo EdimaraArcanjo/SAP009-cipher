@@ -1,28 +1,28 @@
-import cipher from './cipher.js';
+import {encode, decode} from './cipher.js';
 
 
 
-const txtDeslocaC = document.getElementById('textoDeslocC')
+const txtDeslocaC = document.getElementById('textoDesloC')
 const mensagemC = document.getElementById('msgC')
 const botaoC = document.getElementById('botaoC')
 const cifrado = document.getElementById('cifrado')
 
-const txtDeslocD = document.getElementById('textoDeslocD')
+const txtDeslocD = document.getElementById('textoDesloD')
 const mensagemD = document.getElementById('msgD')
 const botaoD = document.getElementById('botaoD')
 const decifrado = document.getElementById('decifrado')
 
-function encode(e) {
+function cifrar(e) {
   e.preventDefault()
-  cifrado.innerHTML = mensagemC.value
+  cifrado.innerHTML = encode(mensagemC.value,txtDeslocaC.value)
 }
 
 
-botaoC.addEventListener('click', encode) 
+botaoC.addEventListener('click', cifrar) 
 
-function decode(d) {
+function decifrar(d) {
   d.preventDefault()
-  decifrado.innerHTML = mensagemD.value
+  decifrado.innerHTML = decode(mensagemD.value,txtDeslocD.value)
 }
 
-botaoD.addEventListener('click', decode)
+botaoD.addEventListener('click', decifrar)

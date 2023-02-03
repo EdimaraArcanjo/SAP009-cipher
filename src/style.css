@@ -135,3 +135,8 @@ a:hover {
     color: wheat;
 }
 
+textarea {
+    background-color: #ECD6C4;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 20px;
+}
