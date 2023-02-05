@@ -110,6 +110,7 @@ p {
     font-weight: 400;
     font-size: 15px;
     color: #2F2325;
+    padding: 15px;
 
 }
 
@@ -124,6 +125,7 @@ p {
     font-weight: 400;
     font-size: 15px;
     color: #2F2325;
+    padding: 15px;
 
 }
 
@@ -139,4 +141,5 @@ textarea {
     background-color: #ECD6C4;
     font-family: 'Raleway', sans-serif;
     border-radius: 20px;
+    padding: 15px;
 }

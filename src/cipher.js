@@ -1,5 +1,14 @@
-export function encode( mensagemC, deslocamento) {
+
+const cipher = {
+  encode:encode,
+  decode:decode
+};
+
+export default cipher;
+
+function encode(deslocamento,mensagemC) {
   let msgrecebidaC = ""
+ 
   const offset = Number.parseInt(deslocamento)
   for (let i = 0 ; i < mensagemC.length ; i++ ) {
     const conta = ((mensagemC.charCodeAt(i) - 65 + offset) % 26) + 65;
@@ -8,11 +17,12 @@ export function encode( mensagemC, deslocamento) {
   return msgrecebidaC
 }
 
-export function decode( mensagemD, deslocamento) {
+function decode(deslocamento, mensagemD) {
   let msgrecebidaD = ""
+ 
   const offset = Number.parseInt(deslocamento)
   for (let i = 0 ; i < mensagemD.length ; i++ ) {
-    const conta = ((mensagemD.charCodeAt(i) - 65 - offset) % 26) + 65;
+    const conta = ((mensagemD.charCodeAt(i) + 65 - offset) % 26) + 65;
     msgrecebidaD += String.fromCharCode(conta);
   } 
   return msgrecebidaD 
