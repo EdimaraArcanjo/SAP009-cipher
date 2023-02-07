@@ -49,7 +49,7 @@ O objetivo deste site é pedagógico. O contexto pensado para utilização desta
 
 Dessa forma, os alunos podem brincar de criptografar e descriptografar mensagens e ainda aprender sobre criptografia e lógica, de forma lúdica e divertida, numa interface fácil e intuitiva de usar. 
 
-<a href="https://edimaraarcanjo.github.io/SAP009-cipher/src/index.html"> Clique aqui para visitar o site!</a>
+💡 <a href="https://edimaraarcanjo.github.io/SAP009-cipher/src/index.html"> Clique aqui para visitar o site!</a>
 
 ## 💟 3. Objetivos de Aprendizagem Alcançados.
 
