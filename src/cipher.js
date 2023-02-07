@@ -8,8 +8,10 @@ export default cipher;
 
 function encode(deslocamento,mensagemC) {
   let msgrecebidaC = ""
-  //if (typeof deslocamento !== "number" || mensagemC !== "string" || mensagemC === "" || deslocamento==="" || mensagemC === 0 || deslocamento===0) //throw new TypeError//
- 
+  if (typeof mensagemC !== "string" || mensagemC === "" || deslocamento==="" ) {
+    throw new TypeError
+  }
+    
   const offset = Number.parseInt(deslocamento)
   for (let i = 0 ; i < mensagemC.length ; i++ ) {
     const conta = ((mensagemC.charCodeAt(i) - 65 + offset) % 26) + 65;
@@ -20,7 +22,10 @@ function encode(deslocamento,mensagemC) {
 
 function decode(deslocamento, mensagemD) {
   let msgrecebidaD = ""
-  //if (typeof deslocamento !== "number" || mensagemD !== "string" || mensagemD === "number") //throw new TypeError//
+  if (typeof mensagemD !== "string" || mensagemD === "" || deslocamento==="" ) {
+    throw new TypeError
+  }
+    
  
   const offset = Number.parseInt(deslocamento)
   for (let i = 0 ; i < mensagemD.length ; i++ ) {
