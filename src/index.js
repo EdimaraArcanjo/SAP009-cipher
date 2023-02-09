@@ -16,8 +16,8 @@ function cifrar(e) {
   cifrado.innerHTML = cipher.encode(txtDeslocaC.value,mensagemC.value)
 }
 
-function decifrar(d) {
-  d.preventDefault()
+function decifrar(e) {
+  e.preventDefault()
   decifrado.innerHTML = cipher.decode(txtDeslocD.value,mensagemD.value)
 }
 

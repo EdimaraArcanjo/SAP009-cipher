@@ -21,18 +21,19 @@ function encode(deslocamento,mensagemC) {
 }
 
 function decode(deslocamento, mensagemD) {
-  let msgrecebidaD = ""
-  if (typeof mensagemD !== "string" || mensagemD === "" || deslocamento==="" ) {
-    throw new TypeError
-  }
+  return encode(-deslocamento,mensagemD)
+  // let msgrecebidaD = ""
+  // if (typeof mensagemD !== "string" || mensagemD === "" || deslocamento==="" ) {
+  //   throw new TypeError
+  // }
     
  
-  const offset = Number.parseInt(deslocamento)
-  for (let i = 0 ; i < mensagemD.length ; i++ ) {
-    const conta = ((mensagemD.charCodeAt(i) + 65 - offset) % 26) + 65;
-    msgrecebidaD += String.fromCharCode(conta);
-  } 
-  return msgrecebidaD 
+  // const offset = Number.parseInt(deslocamento)
+  // for (let i = 0 ; i < mensagemD.length ; i++ ) {
+  //   const conta = ((mensagemD.charCodeAt(i) + 65 - offset) % 26) + 65;
+  //   msgrecebidaD += String.fromCharCode(conta);
+  // } 
+  // return msgrecebidaD 
 }
 
 
